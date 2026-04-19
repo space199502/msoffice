@@ -106,7 +106,7 @@ popd
 
 cls
 color 07
-title  Microsoft_Activation_Scripts %masver%
+title  JP Ulit: OS and Microsoft Office One Stop Shop Station 
 
 set _args=
 set _elev=
@@ -416,7 +416,7 @@ goto dk_done
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title JP Ulit:%blank%OS%blank%and%blank%Microsoft%blank%Office%blank%One%blank%Stop%blank%Shop%blank%Station 
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
@@ -450,7 +450,7 @@ echo:
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                 Activation Methods:
+echo:                 Lifetime and Subscription based License for Windows and Microsoft Office
 echo:
 if defined _hwidgo (
 call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
