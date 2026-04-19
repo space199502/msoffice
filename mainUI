@@ -453,7 +453,7 @@ echo:
 echo:                 Activation Methods:
 echo:
 if defined _hwidgo (
-call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
+call :dk_color3 %_White% "             [1] " %_Green% "Lifetime" %_White% "                - Windows"
 ) else (
 echo:             [1] HWID                - Windows
 )
