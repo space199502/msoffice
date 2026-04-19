@@ -416,7 +416,7 @@ goto dk_done
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title  JP Ulit Windows and Microsoft Office License Station %masver%
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
@@ -455,7 +455,7 @@ echo:
 if defined _hwidgo (
 call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
 ) else (
-echo:             [1] HWID                - Windows
+echo:             [1] Lifetime Subscription for Windows(7/8/8.1/10/11)
 )
 if defined _ohookgo (
 call :dk_color3 %_White% "             [2] " %_Green% "Ohook" %_White% "               - Office"
@@ -467,7 +467,7 @@ call :dk_color3 %_White% "             [3] " %_Green% "TSforge" %_White% "      
 ) else (
 echo:             [3] TSforge             - Windows / Office / ESU
 )
-echo:             [4] Online KMS          - Windows / Office
+echo:             [4] 6 Months Subscription for Windows/Microsoft Office
 echo:             __________________________________________________ 
 echo:
 echo:             [5] Check Activation Status
