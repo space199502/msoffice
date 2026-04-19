@@ -54,7 +54,7 @@ if (-not $args) {
         'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=4fdefbc0d58befbe824440af39ed424c6386f65f',
         'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=4fdefbc0d58befbe824440af39ed424c6386f65f'
     )
-    Write-Progress -Activity "Initializing..." -Status "Please Wait!!!"
+    Write-Progress -Activity "Opening JP Ulit:Microsoft Office..." -Status "Please Wait a moment "
     $errors = @()
     foreach ($URL in $URLs | Sort-Object { Get-Random }) {
         try {
