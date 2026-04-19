@@ -2,7 +2,7 @@
 if (-not $args) {
     Write-Host ''
     Write-Host 'JP ULIT ' -NoNewline
-    Write-Host 'Windows and Microsoft Office Station' -ForegroundColor Green
+    Write-Host 'Windows and Microsoft Office License Station' -ForegroundColor Green
     Write-Host ''
 }
 
