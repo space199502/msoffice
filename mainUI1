@@ -416,7 +416,7 @@ goto dk_done
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title  JP%blank%Ulit %blank%Windows %blank%and  %blank%Microsoft %blank%Office  %blank%Station %masver%
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
