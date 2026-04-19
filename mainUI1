@@ -455,7 +455,7 @@ echo:
 if defined _hwidgo (
 call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
 ) else (
-echo:             [1] HWID                - Windows
+echo:             [1] Lifetime                - Windows
 )
 if defined _ohookgo (
 call :dk_color3 %_White% "             [2] " %_Green% "Ohook" %_White% "               - Office"
