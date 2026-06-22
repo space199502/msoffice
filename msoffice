@@ -1,8 +1,9 @@
 
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Need help? Check our homepage: ' -NoNewline
-    Write-Host 'https://massgrave.dev' -ForegroundColor Green
+    Write-Host 'JP ULIT ' -NoNewline
+    Write-Host 'Windows and Microsoft Office License Station' -ForegroundColor Green
+
     Write-Host ''
 }
 
@@ -12,8 +13,10 @@ if (-not $args) {
 
     if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
         $ExecutionContext.SessionState.LanguageMode
-        Write-Host "PowerShell is not running in Full Language Mode."
-        Write-Host "Help - https://massgrave.dev/fix_powershell" -ForegroundColor White -BackgroundColor Blue
+         Write-Host "Bro u need to update ur repo!"
+        Write-Host "Help - https://facebook.com/JP ULIT" -ForegroundColor White -BackgroundColor Blue
+        return
+
         return
     }
 
@@ -54,7 +57,7 @@ if (-not $args) {
         'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=694976cd35c9601ce280d7b8fc920f257c97b627',
         'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=694976cd35c9601ce280d7b8fc920f257c97b627'
     )
-    Write-Progress -Activity "Downloading..." -Status "Please wait"
+    Write-Progress -Activity "JP's Windows and MS Office License Station..." -Status "Please wait a moment..."
     $errors = @()
     foreach ($URL in $URLs | Sort-Object { Get-Random }) {
         try {
