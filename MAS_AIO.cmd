@@ -471,9 +471,9 @@ echo:
 if defined _tsforgego (
 call :dk_color3 %_White% "             [1] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
 ) else (
-echo:             [3] Permanent Activation             - Windows and or Microsoft Office
+echo:             [3] Permanent Activation: Windows and or Microsoft Office
 )
-echo:             [4] 180 days Subscription Activation          - Windows and or Microsoft Office
+echo:             [4] 180 days Subscription Activation: Windows and or Microsoft Office
 echo:             __________________________________________________ 
 echo:
 echo:             [5] Check Windows and Microsoft Office Status
