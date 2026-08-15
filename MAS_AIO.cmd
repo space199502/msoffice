@@ -380,7 +380,8 @@ if not %_unattended%==1 (
 echo [1] Contact BOSS JP ULIT for code and how to access the Activator.
 echo:
 call :dk_color %_Green% "Choose a menu option using your keyboard [1,0] :"
-choice /C:1JS /N
+choice /C:1J0 /N
+if !errorlevel!==3 (start exit /b)
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start %facebook% & exit /b)
 )
