@@ -380,7 +380,7 @@ if not %_unattended%==1 (
 echo [1] Contact BOSS JP ULIT for code and how to access the Activator.
 echo [0] Exit and Cry...
 call :dk_color %_Green% "Choose a menu option using your keyboard [1,0] :"
-choice /C:1J0 /N
+choice /C:1J2 /N
 if !errorlevel!==3 exit /b
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start %facebook% & exit /b)
@@ -466,15 +466,15 @@ echo:		Integrated MS Office Activation Script by JP ULIT
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                 Choose Activation Methods for your Windows or Microsoft Office:
+echo:       Choose Activation Methods for your Windows or Microsoft Office:
 echo:
 
 if defined _tsforgego (
 call :dk_color3 %_White% "             [1] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
 ) else (
-echo:             [1] Permanent Activation: Windows and or Microsoft Office
+echo:             [1] Permanent Activation: Windows/ Microsoft Office
 )
-echo:             [2] 180 days Subscription Activation: Windows and or Microsoft Office
+echo:             [2] 180 days Subscription Activation: Windows/ Microsoft Office
 echo:             __________________________________________________ 
 echo:
 echo:             [3] Check Windows and Microsoft Office Status
