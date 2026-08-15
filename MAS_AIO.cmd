@@ -3,7 +3,7 @@
 @::Is a real person even the one deciding to flag this or is it Copilot told to flag anything it decides not to like?
 @::If a campaign is using this script as a cover, please flag parts of the campaign instead of the script. This isn't the first time we experienced collateral damage due to campaigns completely unrelated to us.
 @::If you disagree that MAS is not malicious, we would appreciate if you contacted us to explain what constitutes MAS as "Sonbokli" and we'll look into it. Thank you. 
-@set masver=3.12
+@set masver=Premium Version.
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -457,8 +457,7 @@ echo:
 if %winbuild% GEQ 10240 if %winbuild% LEQ 19045 if not defined _serexist if not defined _evalexist if not defined _ltscexist (
 call :dk_color2 %_Green% "       Tip:" %_White% " To activate ESU updates after W10 EOL, use TSforge option."
 )
-echo:
-echo:
+
 echo:       ______________________________________________________________
 echo:
 echo:		Integrated MS Office Activation Script by (JP ULIT)
@@ -471,17 +470,17 @@ echo:
 if defined _tsforgego (
 call :dk_color3 %_White% "             [1] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
 ) else (
-echo:             [3] Permanent Activation: Windows and or Microsoft Office
+echo:             [1] Permanent Activation: Windows and or Microsoft Office
 )
-echo:             [4] 180 days Subscription Activation: Windows and or Microsoft Office
+echo:             [2] 180 days Subscription Activation: Windows and or Microsoft Office
 echo:             __________________________________________________ 
 echo:
-echo:             [5] Check Windows and Microsoft Office Status
-echo:             [6] Change Windows Edition
-echo:             [7] Change Office Edition
+echo:             [3] Check Windows and Microsoft Office Status
+echo:             [4] Change Windows Edition
+echo:             [5] Change Office Edition
 echo:             __________________________________________________      
 echo:
-echo:             [H] Help
+echo:             [6] Help
 echo:             [0] Exit
 echo:       ______________________________________________________________
 echo:
@@ -492,12 +491,12 @@ set _erl=%errorlevel%
 if %_erl%==11 exit /b
 if %_erl%==10 (start %selfgit% & start %github% & start %mas%troubleshoot & goto :MainMenu)
 if %_erl%==9 goto :Extras
-if %_erl%==8 setlocal & call :troubleshoot      & cls & endlocal & goto :MainMenu
-if %_erl%==7 setlocal & call :change_offedition & cls & endlocal & goto :MainMenu
-if %_erl%==6 setlocal & call :change_winedition & cls & endlocal & goto :MainMenu
-if %_erl%==5 setlocal & call :check_actstatus   & cls & endlocal & goto :MainMenu
-if %_erl%==4 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
-if %_erl%==3 setlocal & call :TSforgeActivation & cls & endlocal & goto :MainMenu
+if %_erl%==6 setlocal & call :troubleshoot      & cls & endlocal & goto :MainMenu
+if %_erl%==5 setlocal & call :change_offedition & cls & endlocal & goto :MainMenu
+if %_erl%==4 setlocal & call :change_winedition & cls & endlocal & goto :MainMenu
+if %_erl%==3 setlocal & call :check_actstatus   & cls & endlocal & goto :MainMenu
+if %_erl%==2 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
+if %_erl%==1 setlocal & call :TSforgeActivation & cls & endlocal & goto :MainMenu
 if %_erl%==2 setlocal & call :OhookActivation   & cls & endlocal & goto :MainMenu
 if %_erl%==1 setlocal & call :HWIDActivation    & cls & endlocal & goto :MainMenu
 goto :MainMenu
