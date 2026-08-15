@@ -81,7 +81,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
-set "mas=ht%blank%tps%blank%://m%blank%ass%blank%grave.dev/"
+set "https:/ /www.facebook.com/JpNotFound.404"
 set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
 set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
 
@@ -464,7 +464,7 @@ echo:		Integrated MS Office Activation Script by (JP ULIT)
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                 Activation Methods:
+echo:                 Choose Activation Methods for your Windows or Microsoft Office:
 echo:
 
 if defined _tsforgego (
