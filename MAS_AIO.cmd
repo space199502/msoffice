@@ -119,7 +119,7 @@ exit /b
 
 cls
 color 07
-title Welcome to Microsoft Office Landing Page by (JP ULIT)
+title  Windows and Microsoft Office Activator Landing Page by (JP ULIT)
 
 set _args=
 set _elev=
@@ -1193,8 +1193,8 @@ set  "_Green="Black" "Green""
 set "_Yellow="Black" "Yellow""
 )
 
-set "nceline=echo: &echo ==== ERROR ==== &echo:"
-set "eline=echo: &call :dk_color %Red% "==== ERROR ====" &echo:"
+set "nceline=echo: &echo Welcome to Windows and Microsoft Office Activator &echo:"
+set "eline=echo: &call :dk_color %Blue% "Welcome to Windows and Microsoft Office Activator" &echo:"
 if %~z0 GEQ 200000 (
 set "_exitmsg=Go back"
 set "_fixmsg=Go back to Main Menu, select Troubleshoot and run Fix Licensing option."
