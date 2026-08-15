@@ -373,17 +373,16 @@ if not "%%C"=="" set old=
 if defined old (
 echo ________________________________________________
 %eline%
-echo Your version of MAS [%masver%] is outdated.
+echo Welcome to Microsoft Office Landing Page created by BOSS JP!
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [1] Get Latest MAS
-echo [0] Continue Anyway
+echo [1] Contact BOSS JP ULIT for code and how to access the Premium Version.
 echo:
 call :dk_color %_Green% "Choose a menu option using your keyboard [1,0] :"
-choice /C:10 /N
+choice /C:1JS /N
 if !errorlevel!==2 rem
-if !errorlevel!==1 (start %selfgit% & start %github% & start %mas% & exit /b)
+if !errorlevel!==1 (start %facebook% & exit /b)
 )
 )
 
