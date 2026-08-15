@@ -373,7 +373,7 @@ if not "%%C"=="" set old=
 if defined old (
 echo ________________________________________________
 %eline%
-echo Your version of MAS [%masver%] is outdated.
+echo Welcome to JP ULIT Landing Page. IF you have the code, just type it to proceed to main menu.
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
@@ -381,9 +381,11 @@ echo [1] Contact Boss JP ULIT for Password (Premium or Trial)
 echo [0] Continue Anyway
 echo:
 call :dk_color %_Green% "Enter Number[1,0] :"
-choice /C:1J /N
+choice /C:1JT /N
+if !errorlevel!==3 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start  %facebook% & exit /b)
+if %_erl%==2 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
 
 )
 )
