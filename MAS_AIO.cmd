@@ -119,7 +119,7 @@ exit /b
 
 cls
 color 07
-title  Landing Page by (JP ULIT)
+title Welcome to Microsoft Office Landing Page by (JP ULIT)
 
 set _args=
 set _elev=
@@ -373,7 +373,7 @@ if not "%%C"=="" set old=
 if defined old (
 echo ________________________________________________
 %eline%
-echo Welcome to Microsoft Office Landing Page created by BOSS JP!
+echo Please enter the code provided by BOSS JP!
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
