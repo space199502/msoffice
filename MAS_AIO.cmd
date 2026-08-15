@@ -15,8 +15,8 @@
 
 
 ::============================================================================
-::
-::   Homepage: m{}assgrave{dot}dev
+::		Facebook: JP ULIT
+::    	Messenger: @JpNotFound.404
 ::
 ::============================================================================
 
@@ -110,7 +110,7 @@ popd
 
 cls
 color 07
-title  Microsoft_Activation_Scripts %masver%
+title  Integrated MS Office Activation Script by (JP ULIT) %masver%
 
 set _args=
 set _elev=
@@ -420,7 +420,7 @@ goto dk_done
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title  Integrated MS Office Activation Script by (JP ULIT) %masver%
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
@@ -469,9 +469,9 @@ echo:             [2] Ohook               - Office
 if defined _tsforgego (
 call :dk_color3 %_White% "             [3] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
 ) else (
-echo:             [3] TSforge             - Windows / Office / ESU
+echo:             [3] Permenant Activation             - Windows / Office / ESU
 )
-echo:             [4] Online KMS          - Windows / Office
+echo:             [4] 180 days Subscription Activation          - Windows / Office
 echo:             __________________________________________________ 
 echo:
 echo:             [5] Check Activation Status
@@ -574,8 +574,8 @@ echo:         ____________________________________________________________
 echo:
 echo:            [1] HWID       [Windows]
 echo:            [2] Ohook      [Office]
-echo:            [3] TSforge    [Windows / ESU / Office]
-echo:            [4] Online KMS [Windows / Office]
+echo:            [3] Permanent Activation    [Windows / ESU / Office]
+echo:            [4] 180 days Subscription Activation [Windows / Office]
 echo:
 echo:            [5] HWID       [Windows] ^+ Ohook [Office]
 echo:            [6] HWID       [Windows] ^+ Ohook [Office] ^+ TSforge [ESU]
