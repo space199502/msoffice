@@ -385,7 +385,7 @@ choice /C:1JT /N
 if !errorlevel!==3 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start  %facebook% & exit /b)
-if %_erl%==2 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
+
 
 )
 )
