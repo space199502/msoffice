@@ -461,38 +461,31 @@ echo:
 echo:
 echo:       ______________________________________________________________
 echo:
+echo:		Integrated MS Office Activation Script by (JP ULIT)
+echo:
+echo:       ______________________________________________________________
+echo:
 echo:                 Activation Methods:
 echo:
-if defined _hwidgo (
-call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
-) else (
-echo:             [1] HWID                - Windows
-)
-if defined _ohookgo (
-call :dk_color3 %_White% "             [2] " %_Green% "Ohook" %_White% "               - Office"
-) else (
-echo:             [2] Ohook               - Office
-)
+
 if defined _tsforgego (
-call :dk_color3 %_White% "             [3] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
+call :dk_color3 %_White% "             [1] " %_Green% "TSforge" %_White% "             - Windows / Office / ESU"
 ) else (
-echo:             [3] TSforge             - Windows / Office / ESU
+echo:             [3] Permanent Activation             - Windows and or Microsoft Office
 )
-echo:             [4] Online KMS          - Windows / Office
+echo:             [4] 180 days Subscription Activation          - Windows and or Microsoft Office
 echo:             __________________________________________________ 
 echo:
-echo:             [5] Check Activation Status
+echo:             [5] Check Windows and Microsoft Office Status
 echo:             [6] Change Windows Edition
 echo:             [7] Change Office Edition
 echo:             __________________________________________________      
 echo:
-echo:             [8] Troubleshoot
-echo:             [E] Extras
 echo:             [H] Help
 echo:             [0] Exit
 echo:       ______________________________________________________________
 echo:
-call :dk_color2 %_White% "         " %_Green% "Choose a menu option using your keyboard [1,2,3...E,H,0] :"
+call :dk_color2 %_White% "         " %_Green% "Choose a number:"
 choice /C:12345678EH0 /N
 set _erl=%errorlevel%
 
@@ -4323,7 +4316,7 @@ set "_debug=0"
 cls
 color 07
 set KS=K%blank%MS
-title  TSforge Activation %masver%
+title  Permanent Activation %masver%
 
 set _args=
 set _elev=
@@ -4371,7 +4364,7 @@ goto dk_done
 if %_unattended%==0 (
 cls
 if not defined terminal mode 76, 33
-title  TSforge Activation %masver%
+title  Permanent Activation %masver%
 
 echo:
 echo:
@@ -4379,10 +4372,8 @@ echo:
 echo        ______________________________________________________________
 echo: 
 echo               [1] Activate - Windows
-echo               [2] Activate - ESU
-echo               [3] Activate - Office [All]
-echo               [4] Activate - Office [Project/Visio]
-echo               [5] Activate - All
+echo               [3] Activate - Microsoft Office 
+echo               [5] Activate - All (both Windows and Microsoft Office)
 echo               _______________________________________________  
 echo: 
 echo                   Advanced Options:
@@ -4399,7 +4390,7 @@ echo               [E] Reset    - Rearm/Timers/Tamper/Lock
 echo               [F] Change   - Activation Method [%_actmethod%]
 echo               _______________________________________________       
 echo:
-echo               [6] Remove TSforge Activation
+echo               [6] Remove Permanent Activation
 echo               [7] Download Office
 echo               [0] %_exitmsg%
 echo        ______________________________________________________________
@@ -4489,7 +4480,7 @@ mode 125, %height%
 if exist "%SysPath%\spp\store_test\" mode 134, %height%
 %psc% "&{$W=$Host.UI.RawUI.WindowSize;$B=$Host.UI.RawUI.BufferSize;$W.Height=%height%;$B.Height=300;$Host.UI.RawUI.WindowSize=$W;$Host.UI.RawUI.BufferSize=$B;}" %nul%
 )
-title  TSforge Activation %masver%
+title  Permanent Activation %masver%
 
 echo:
 echo Initializing...
