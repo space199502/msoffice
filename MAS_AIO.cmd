@@ -119,7 +119,7 @@ exit /b
 
 cls
 color 07
-title  Windows and Microsoft Office Activator Landing Page by (JP ULIT)
+title  Windows and Microsoft Office Activator Landing Page by JP ULIT
 
 set _args=
 set _elev=
@@ -462,7 +462,7 @@ call :dk_color2 %_Green% "       Tip:" %_White% " To activate ESU updates after 
 
 echo:       ______________________________________________________________
 echo:
-echo:		Integrated MS Office Activation Script by (JP ULIT)
+echo:		Integrated MS Office Activation Script by JP ULIT
 echo:
 echo:       ______________________________________________________________
 echo:
