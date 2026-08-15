@@ -52,7 +52,7 @@ if (-not $args) {
 
     $URLs = @(
         'https://raw.githubusercontent.com/space199502/msoffice/refs/heads/main/MAS_AIO.cmd'
-       
+        
     )
     Write-Progress -Activity "Downloading..." -Status "Please wait"
     $errors = @()
