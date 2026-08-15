@@ -381,7 +381,7 @@ echo [1] Contact Boss JP ULIT for Password (Premium or Trial)
 echo [0] Continue Anyway
 echo:
 call :dk_color %_Green% "Enter Number[1,0] :"
-choice /C:1JT /N
+choice /C:10 /N
 if !errorlevel!==3 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start  %facebook% & exit /b)
