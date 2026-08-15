@@ -82,6 +82,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
+set "rickrolled=ht%blank%tps%blank%://www.youtube.com/shorts/_6HzLIJPH2A
 set "facebook=ht%blank%tps%blank%://www.facebook.com/JPFound404"
 set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
 set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
@@ -381,7 +382,7 @@ echo [1] Contact BOSS JP ULIT for code and how to access the Activator.
 echo [0] Exit and Cry...
 call :dk_color %_Green% "Choose a menu option using your keyboard [1,0] :"
 choice /C:1J2 /N
-if !errorlevel!==3 exit /b
+if !errorlevel!==3 (start %rickrolled) & exit /b)
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start %facebook% & exit /b)
 )
@@ -429,7 +430,7 @@ goto dk_done
 
 cls
 color 07
-title  Integrated%blank% MS %blank%Office %blank%Activation %blank%Script%blank% by %blank%(JP%blank% ULIT)%masver%
+title  Integrated%blank% MS %blank%Office %blank%Activation %blank%Script%blank% by %blank%JP%blank% ULIT%masver%
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
