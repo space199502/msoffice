@@ -3,7 +3,7 @@
 if (-not $args) {
     Write-Host ''
     Write-Host 'Need help? Message me on Facebook: ' -NoNewline
-    Write-Host 'JP Ulit' -ForegroundColor Green
+    Write-Host 'JP UlIT' -ForegroundColor Green
     Write-Host ''
 }
 
