@@ -119,7 +119,7 @@ exit /b
 
 cls
 color 07
-title  Integrated MS Office Activation Script by (JP ULIT)
+title  Landing Page by (JP ULIT)
 
 set _args=
 set _elev=
