@@ -18,7 +18,7 @@
 ::============================================================================
 ::			Facebook: JP ULIT
 ::			Messenger: @JpNotFound.404
-::
+::			FB Page : facebook.com/JPFound404
 ::============================================================================
 
 
@@ -82,7 +82,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
-set "facebook=ht%blank%tps%blank%://www.facebook.com/JpNotFound.404"
+set "facebook=ht%blank%tps%blank%://www.facebook.com/JPFound404"
 set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
 set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
 
