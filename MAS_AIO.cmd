@@ -4,6 +4,7 @@
 @::If a campaign is using this script as a cover, please flag parts of the campaign instead of the script. This isn't the first time we experienced collateral damage due to campaigns completely unrelated to us.
 @::If you disagree that MAS is not malicious, we would appreciate if you contacted us to explain what constitutes MAS as "Sonbokli" and we'll look into it. Thank you. 
 @set masver=Premium Version.
+@set vermas=Trial Version
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -81,7 +82,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
-set "https:/ /www.facebook.com/JpNotFound.404"
+set "facebook=ht%blank%tps%blank%://www.facebook.com/JpNotFound.404"
 set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
 set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
 
@@ -118,7 +119,7 @@ exit /b
 
 cls
 color 07
-title  Integrated MS Office Activation Script by (JP ULIT) %masver%
+title  Integrated MS Office Activation Script by (JP ULIT)
 
 set _args=
 set _elev=
@@ -376,13 +377,13 @@ echo Your version of MAS [%masver%] is outdated.
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [1] Get Latest MAS
+echo [1] Contact Boss JP ULIT for Password (Premium or Trial)
 echo [0] Continue Anyway
 echo:
-call :dk_color %_Green% "Choose a menu option using your keyboard [1,0] :"
+call :dk_color %_Green% "Enter Number[1,0] :"
 choice /C:10 /N
 if !errorlevel!==2 rem
-if !errorlevel!==1 (start %selfgit% & start %github% & start %mas% & exit /b)
+if !errorlevel!==1 (start  %facebook% & exit /b)
 )
 )
 
