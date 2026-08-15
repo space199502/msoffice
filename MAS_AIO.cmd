@@ -377,11 +377,11 @@ echo Your version of MAS [%masver%] is outdated.
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [2] Contact Boss JP ULIT for Password (Premium or Trial)
+echo [1] Contact Boss JP ULIT for Password (Premium or Trial)
 echo [0] Continue Anyway
 echo:
 call :dk_color %_Green% "Enter Number[1,0] :"
-choice /C:10 /N
+choice /C:1J /N
 if !errorlevel!==2 rem
 if !errorlevel!==1 (start  %facebook% & exit /b)
 
