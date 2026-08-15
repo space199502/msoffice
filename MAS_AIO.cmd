@@ -377,14 +377,14 @@ echo Your version of MAS [%masver%] is outdated.
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [2] Trial Version (180 days only)
-echo [1] Contact Boss JP ULIT for Password (Premium or Trial)
+echo [1] Trial Version (180 days only)
+echo [2] Contact Boss JP ULIT for Password (Premium or Trial)
 echo [0] Continue Anyway
 echo:
 call :dk_color %_Green% "Enter Number[1,0] :"
 choice /C:10 /N
-if !errorlevel!==09275834751 rem
-if !errorlevel!==3 (start  %facebook% & exit /b)
+if !errorlevel!==3 rem
+if !errorlevel!==1 (start  %facebook% & exit /b)
 if !errorlevel!==2 setlocal & call :KMSActivation     & cls & endlocal & goto :MainMenu
 )
 )
